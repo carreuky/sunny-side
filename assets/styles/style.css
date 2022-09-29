@@ -63,9 +63,10 @@ input[type="checkbox"] {
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
   .img-text {
-    display: none;
+    /* display: none; */
   }
   .menu {
+    z-index: 99;
     display: none;
     position: absolute;
     background-color: white;
@@ -103,6 +104,7 @@ input[type="checkbox"] {
   color: white;
   position: relative;
   text-align: center;
+  
 }
 .heading-text {
   position: absolute;
@@ -127,7 +129,24 @@ input[type="checkbox"] {
 .arrow {
   position: absolute;
   left: 50%;
+  top:25%
 }
+
+/* transtion */
+.arrow {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+
 .text-top {
   bottom: 18px;
 }
