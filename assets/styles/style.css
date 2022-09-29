@@ -1,125 +1,131 @@
 /* UTILITIES */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Fraunces:opsz,wght@9..144,300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-   body {
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(52, 177, 235);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  background-color: #3ebfff;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
-
-   /* NAVBAR STYLING STARTS */
+/* NAVBAR STYLING STARTS */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: rgb(52, 177, 235);
-    color: #fff;
-   }
-   .nav-links a {
-    color: rgb(24, 23, 23);
-   }
-   /* LOGO */
-   .logo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: 900;
-   }
-   /* NAVBAR MENU */
-   .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-   }
-   .menu li:hover {
-    background-color: yellow;
-    border-radius: 20px;
-    transition: 0.3s ease;
-    font-weight: 900;
-   }
-   .menu li {
-    padding: 10px 16px;
-   }
-   /* DROPDOWN MENU */
-   .services {
-    position: relative; 
-   }
-   .dropdown {
-    background-color: rgb(1, 139, 139);
-    padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
-   .dropdown li + li {
-    margin-top: 10px;
-   }
-   .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-   }
-   .dropdown li:hover {
-    background-color: #4c9e9e;
-   }
-   .services:hover .dropdown {
-    display: block;
-   }
-   /*RESPONSIVE NAVBAR MENU STARTS*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #3ebfff;
+  color: #fff;
+}
+.nav-links a {
+  color: white;
+}
+.nav-links a:hover {
+  color: black;
+}
+/* LOGO */
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu li:hover {
+  background-color: white;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  font-weight: 900;
+}
+.menu li {
+  padding: 10px 16px;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
-input[type=checkbox]{
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .img-text {
     display: none;
-   } 
-   /*HAMBURGER MENU*/
-   .hamburger {
+  }
+  .menu {
     display: none;
-    font-size: 24px;
-    user-select: none;
-   }
-   /* APPLYING MEDIA QUERIES */
-   @media (max-width: 768px) {
-   .menu {
-    display:none;
     position: absolute;
-    background-color:white;
+    background-color: white;
     right: 0;
     left: 0;
     margin: 25px;
     text-align: center;
     padding: 16px 0;
-   }
-   .menu li:hover {
+  }
+  .nav-links a {
+    color: #5a636c;
+  }
+  .nav-links a:hover {
+    color: black;
+  }
+  .menu li:hover {
     font-weight: 900;
     display: inline-block;
-    background-color: yellow;
+    background-color: #fad400;
     transition: 0.3s ease;
-   }
-   .menu li + li {
+  }
+  .menu li + li {
     margin-top: 12px;
-   }
-   input[type=checkbox]:checked ~ .menu{
+    color: #5a636c;
+  }
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
-   }
-   .hamburger {
+  }
+  .hamburger {
     display: block;
-   }
-   .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-   }
-   .dropdown li:hover {
-    background-color: #4c9e9e;
-   }
-   }
+  }
+}
+/* CREATIVE SECTION */
+.img-text {
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.heading-text {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.heading-text > h1{
+    font-weight: bolder;
+}
+.headingH2{
+    font-weight: bolder;
+    font-size: 45px;
+}
+.learn{
+    font-weight: bolder;
+    border-bottom: #fad400 solid 1px;
+    width: 25%;  
+}
+
+.arrow {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
