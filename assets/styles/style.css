@@ -126,6 +126,10 @@ input[type="checkbox"] {
 
 .arrow {
   position: absolute;
-  top: 25%;
   left: 50%;
+}
+.text-top{
+    bottom: 15px;
+
+  
 }
