@@ -111,25 +111,49 @@ input[type="checkbox"] {
   font-weight: bolder;
   letter-spacing: 3px;
 }
-.heading-text > h1{
-    font-weight: bolder;
+.heading-text > h1 {
+  font-weight: bolder;
 }
-.headingH2{
-    font-weight: bolder;
-    font-size: 45px;
+.headingH2 {
+  font-weight: bolder;
+  font-size: 45px;
 }
-.learn{
-    font-weight: bolder;
-    border-bottom: #fad400 solid 1px;
-    width: 25%;  
+.learn {
+  font-weight: bolder;
+  border-bottom: #fad400 solid 1px;
+  width: 25%;
 }
 
 .arrow {
   position: absolute;
   left: 50%;
 }
-.text-top{
-    bottom: 15px;
-
-  
+.text-top {
+  bottom: 18px;
+}
+.user-p {
+  font-weight: 400;
+}
+.pos {
+  font-weight: 900;
+  font-size: 18px;
+}
+img{
+    height: auto;
+    width: auto;
+}
+footer{
+    background-color: #9dddce;
+}
+footer h2{
+    color:#307464;
+font-weight: bolder; 
+}
+.footer-href{
+    color:#307464;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.footer-href:hover{
+    color: #fad400;
 }
