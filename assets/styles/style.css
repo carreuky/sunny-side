@@ -62,8 +62,9 @@ input[type="checkbox"] {
 }
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
-  .img-text {
-    /* display: none; */
+  .txt-img{
+    display:flex;
+    flex-direction: column;
   }
   .menu {
     z-index: 99;
@@ -97,6 +98,14 @@ input[type="checkbox"] {
   }
   .hamburger {
     display: block;
+  }
+  .text-top {
+    position: absolute;
+    bottom: 0px;
+  }
+  .heading-text{
+    left: 0px;
+    position: relative;
   }
 }
 /* CREATIVE SECTION */
@@ -148,6 +157,7 @@ input[type="checkbox"] {
 
 
 .text-top {
+  /* position:absolute; */
   bottom: 18px;
 }
 .user-p {
